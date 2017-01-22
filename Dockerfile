@@ -1,4 +1,4 @@
-FROM postgres:9.6.1-apline
+FROM postgres:9.6.1-alpine
 
 ENV POSTGRES_PASSWORD test
 ENV POSTGRES_USER test
