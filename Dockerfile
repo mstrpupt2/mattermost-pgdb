@@ -1,5 +1,9 @@
 FROM postgres:9.6.1
 
+ENV MPOSTGRES_USER=mmuser \
+    POSTGRES_PASSWORD=mmuser_password \
+    POSTGRES_DB=mattermost
+
 RUN apt-get update \
     && apt-get install -y python-dev lzop pv daemontools curl build-essential \
     && curl --silent --show-error --retry 5 https://bootstrap.pypa.io/get-pip.py | python \
