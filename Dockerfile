@@ -1,6 +1,6 @@
 FROM postgres:9.6.1
 
-ENV MPOSTGRES_USER=mmuser \
+ENV POSTGRES_USER=mmuser \
     POSTGRES_PASSWORD=mmuser_password \
     POSTGRES_DB=mattermost
 
